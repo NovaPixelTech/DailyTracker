@@ -1,0 +1,89 @@
+Create a full-stack web application for tracking daily calorie intake and expenditure.
+
+### Core Features:
+The app should allow the user to log data per day:
+
+1. Food Intake (Calories Consumed)
+   - Breakfast calories (e.g., 300 kcal)
+   - Lunch calories (e.g., 500 kcal)
+   - Dinner calories (e.g., 600 kcal)
+   - Automatically calculate total daily intake
+
+2. Calories Burned
+   - Walking calories (manual input, e.g., 600 kcal)
+   - Workout/Gym calories (manual input, e.g., 200 kcal)
+   - Automatically calculate total calories burned
+
+3. Net Calories Calculation
+   - Net Calories = Total Intake - Walking - Workout
+   - Display clearly if the user is in:
+     - Calorie deficit
+     - Calorie surplus
+     - Maintenance
+
+4. User Profile & Goals
+   - Allow user to input:
+     - Weight (kg)
+     - Height (cm)
+     - Age
+     - Gender
+     - Activity level
+   - Calculate estimated daily maintenance calories (TDEE)
+   - Allow user to set a goal:
+     - Lose weight
+     - Maintain
+     - Gain weight
+   - Allow setting a target calorie deficit (e.g., -500 kcal/day)
+
+5. Weight Change Estimation
+   - Estimate daily weight change based on calorie deficit/surplus
+   - Use rule: 7700 kcal ≈ 1 kg fat
+   - Show estimated daily and weekly weight change
+
+6. Daily Recommendation System
+   - Show remaining calories user can eat or burn to reach goal
+   - Example:
+     "You can eat 300 more kcal today"
+     or
+     "You need to burn 200 kcal to reach your goal"
+
+7. Data Persistence
+   - Store all entries in a database (SQLite or PostgreSQL)
+   - Data should be stored per date
+   - Allow editing past entries
+
+8. Statistics Dashboard
+   - Show:
+     - Daily history
+     - Weekly averages
+     - Monthly trends
+   - Include charts:
+     - Calories consumed vs burned
+     - Net calories over time
+     - Estimated weight trend
+
+9. UI/UX Requirements
+   - Clean, modern, responsive design
+   - Use charts (e.g., Chart.js or Recharts)
+   - Use cards and visual indicators (green = deficit, red = surplus)
+   - Dashboard layout
+
+10. Tech Stack
+   - Frontend: React (with Tailwind CSS)
+   - Backend: Node.js + Express
+   - Database: SQLite (simple setup)
+   - API structure (RESTful)
+
+11. Extra Features (optional but preferred)
+   - Authentication (simple login)
+   - Dark mode
+   - Export data (CSV)
+
+### Deliverables:
+- Full working app
+- Backend + frontend code
+- Database schema
+- Instructions to run locally
+- Seed example data
+
+Make the UI visually appealing with graphs, smooth layout, and clear calorie tracking visualization.
