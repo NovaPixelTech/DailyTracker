@@ -143,7 +143,7 @@ export default function Profile() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Gender</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Select gender" />
@@ -165,7 +165,7 @@ export default function Profile() {
                   render={({ field }) => (
                     <FormItem>
                       <FormLabel>Activity Level</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Select activity" />
@@ -194,7 +194,7 @@ export default function Profile() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Primary Goal</FormLabel>
-                        <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <Select onValueChange={field.onChange} value={field.value}>
                           <FormControl>
                             <SelectTrigger>
                               <SelectValue placeholder="Select goal" />
